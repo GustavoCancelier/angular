@@ -32,6 +32,22 @@
       "salario": 2000,
       "estaFerias": true,
       "id": 4
+    },
+    {
+      "nome": "Gustavo",
+      "filial": "MATRIZ",
+      "dataAdmissao": "2021-05-14",
+      "cargo": "Gerente",
+      "salario": 12000,
+      "id": 5
+    },
+    {
+      "nome": "Thiago",
+      "filial": "MATRIZ",
+      "dataAdmissao": "2021-07-21",
+      "cargo": "Programador",
+      "salario": 5000,
+      "id": 6
     }
   ]
 }

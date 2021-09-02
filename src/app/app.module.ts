@@ -13,6 +13,8 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FuncionarioFormComponent } from './components/funcionario-form/funcionario-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { FuncionarioComponent } from './components/funcionario/funcionario.component';
 registerLocaleData(localePt, 'pt')
 
 @NgModule({
@@ -21,13 +23,33 @@ registerLocaleData(localePt, 'pt')
     FilialPipe,
     DetalhesFuncionarioComponent,
     UsuarioComponent,
-    FuncionarioFormComponent
+    FuncionarioFormComponent,
+    FuncionarioComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      {
+        path: 'funcionarios', 
+        children: [
+          { 
+            path: '', component: FuncionarioComponent
+          },
+          {
+            path: 'cadastro', component: FuncionarioFormComponent
+          },
+          {
+            path: 'alterar/:id', component: FuncionarioFormComponent
+          }
+        ]
+      },
+      {
+        path: '', component: FuncionarioComponent
+      }
+    ])
   ],
   providers: [
     {

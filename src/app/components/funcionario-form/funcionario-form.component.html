@@ -1,1 +1,30 @@
-<p>funcionario-form works!</p>
+<div>
+    <form [formGroup]="funcionarioForm">
+        <p>
+            <label for="nome">Nome: </label>
+            <input id="nome" formControlName="nome" type="text">
+        </p>
+        <p>
+            <label for="cargo">Cargo: </label>
+            <input id="cargo" formControlName="cargo" type="text">
+        </p>
+        <p>
+            <label for="dt">Data: </label>
+            <input id="dt" formControlName="dataAdmissao" type="text">
+        </p>
+        <p>
+            <label for="number">Salario: </label>
+            <input id="number" formControlName="salario" type="number">
+        </p>
+        <p>
+            <label for="filial">Filial onde trabalha:</label>
+            <select id="filial" formControlName="filial" name="filial" id="filial">
+            <option value="MATRIZ">Matriz</option>
+            <option value="FILIAL_A">Filial-1</option>
+            <option value="FILIAL_B">Filial-2</option>
+            <option value="FILIAL_C">Filial-3</option>
+            </select>
+        </p>
+        <button (click)="salvarFuncionario()" type="submit" [disabled]="funcionarioForm.invalid">Salvar</button>
+    </form>
+</div>
