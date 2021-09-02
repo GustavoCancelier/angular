@@ -1,0 +1,37 @@
+{
+  "funcionarios": [
+    {
+      "id": 1,
+      "nome": "Jailson Santos",
+      "filial": "MATRIZ",
+      "dataAdmissao": "2020-08-22",
+      "cargo": "Assistente administrativo",
+      "salario": 5236.45
+    },
+    {
+      "id": 2,
+      "nome": "Carlos Eduardo",
+      "filial": "FILIAL_C",
+      "dataAdmissao": "2018-05-15",
+      "cargo": "Programador",
+      "salario": 3256
+    },
+    {
+      "id": 3,
+      "nome": "Adriana Zardony",
+      "filial": "FILIAL_A",
+      "dataAdmissao": "2021-03-09",
+      "cargo": "Analista de sistemas",
+      "salario": 5412.94
+    },
+    {
+      "nome": "Alberto",
+      "filial": 3,
+      "dataAdmissao": "2018-02-28T03:00:00.000Z",
+      "cargo": "Caixa",
+      "salario": 2000,
+      "estaFerias": true,
+      "id": 4
+    }
+  ]
+}
